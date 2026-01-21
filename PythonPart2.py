@@ -1,4 +1,4 @@
-"""# Concepts : Conditional Statements, Loops & Functions
+# Concepts : Conditional Statements, Loops & Functions
 
 # There are 3 main conditional statements in Python:
 # 1. if - used to test a condition. If it’s True, the indented block runs.
@@ -108,7 +108,7 @@ number = int(input("enter a number: "))
 if(number%2 == 0):
     print(f"{number} is even number.")
 else:
-    print(f"{number} is odd number")"""
+    print(f"{number} is odd number")
 
 #Loops
 """
