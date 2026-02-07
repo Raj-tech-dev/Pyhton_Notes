@@ -1,4 +1,4 @@
-"""# Concepts : Conditional Statements, Loops & Functions
+# Concepts : Conditional Statements, Loops & Functions
 
 # There are 3 main conditional statements in Python:
 # 1. if - used to test a condition. If it’s True, the indented block runs.
@@ -108,7 +108,7 @@ number = int(input("enter a number: "))
 if(number%2 == 0):
     print(f"{number} is even number.")
 else:
-    print(f"{number} is odd number")"""
+    print(f"{number} is odd number")
 
 #Loops
 """
@@ -133,7 +133,7 @@ while n<10:
     n += 1
 # print 10 to 1
 n = 10
-while n >1:
+while n>1:
     print(n)
     n -= 1
 
@@ -194,5 +194,117 @@ for ch in word:
     count += 1
 print(f"i occurs {count} times.")
 
+#Nested loop
+for i in range(1,3):
+   for j in range(1,3):
+      print(f"({i},{j})")
+
+# Example
+# FizzFuZZ 412 Leetcode
+n =5
+lst = []
+for i in range(1,n+1):
+    if(i%3==0 and i%5==0):
+      lst.append("FizzBuzz")
+    elif(i%3==0):
+       lst.append("Fizz")
+    elif(i%5==0):
+       lst.append("Buzz")
+    else:
+       lst.append(str(i))
+print(lst)
+
+# Fibbonacci series 509 leetcode
+# def fibb_cal(n):
+   
+   
+      
+      
+
+# range() function 
+"""The range() function in Python is used to generate a sequence of numbers,
+typically for use in loops.
+The function has 3 parameters:
+1.start(default=0)-the number to start from
+2.stop-the number to stop before(notincluded)
+3.step(default=1)-how much to increase by each time.
+"""
+#single argument-start
+for i in range(5):
+   print(i)#output:0,1,2, 3, 4 
+# 2 arguments -start, stop 
+for i in range(1, 6):
+   print(i) # output: 1,2,3,4,5
+#3 arguments-start,stop,step 
+for i in range(1,10,2):
+   print(i)#output:1,3,5,7,9
+
+# Practice time
+number = int (input("Enter a number: "))
+n =1
+while(n<=10):
+    table = number * n
+    print(table) 
+    n = n+1
+print("questio number new")
+
+# Print odd numbers from 1 to 10, using continue
+i=0
+while(i<10):
+    
+    if(i%2 == 0):
+         continue
+    print(i)
+    i = i+1
+# Count vowels in a word.
+word = 'RajkumarSharma'
+count=0
+for ch in word:
+    
+    if ch in ['a', 'e', 'i', 'o', 'u']:
+        count += 1
+    print(f"i occurs {count} times.")
+# Sum of first n natural numbers.
+k = 10
+sum =0
+for i in range(k+1):
+    sum += i
+print(f"Sum of first 10 number is {sum}")
+
+
+# Function
+"""
+Functions in Python are blocks of reusable code that perform a specific task. They 
+make our code organized, readable, and easier to maintain.
+We use def the keyword to define our function:
+"""
+def Hello():
+    print("Hello this is called by function")
+Hello()  #function call
+
+def sum(a,b):
+    print(f"sum of {a} & {b} is {a+b} ")
+sum(5,7)
+
+# Functions can return a result using return the keyword.
+def avg(a,b,c):
+    return (a+b+c)/3
+print(avg(4,5,7))
+
+# Lambda Functions
+"""
+Lambda functions are short, one-liner functions that are used to perform simple 
+tasks. These are created using lambda the keyword.
+"""
+# example
+# 1
+square = lambda x: x*x
+print(square(6))
+# 2
+y =5
+factorial = lambda y:1 if y == 0 else y * factorial(y-1)
+print(factorial(5))
+# 3
+largest_of_three = lambda a,b,c:a if a>=b and a>=c else (b if b>= c else c)
 
 
