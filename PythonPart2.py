@@ -308,3 +308,14 @@ print(factorial(5))
 largest_of_three = lambda a,b,c:a if a>=b and a>=c else (b if b>= c else c)
 
 
+# Built-in Functions
+"""
+All the functions that we have studied till now are user-defined functions, but in 
+Python we also have a lot of built-in functions too. The definition (logic) of built-in 
+functions is already written in Python & we just have to use them.
+Some built-in functions that we have already used till now.
+print()
+input()
+type()
+range()
+"""
